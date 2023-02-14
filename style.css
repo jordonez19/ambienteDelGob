@@ -120,6 +120,8 @@ a.nav-link:active {
   border: solid var(--purple);
   box-shadow: 0 0 32px var(--purple);
   width: 40%;
+  cursor: pointer;
+
 }
 
 svg {
@@ -144,6 +146,7 @@ svg {
 .container-card {
   margin-top: 25px;
   position: relative;
+  cursor: pointer;
 }
 
 .container-card .card {

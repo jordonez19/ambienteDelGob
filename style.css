@@ -132,39 +132,6 @@ svg {
   height: 200px;
 }
 
-@media (min-width: 992px) {
-  .navbar .navbar-collapse {
-    justify-content: flex-end;
-  }
-
-  .navbar .navbar-nav {
-    margin-left: auto;
-  }
-
-  .navbar .nav-item {
-    margin-left: 30px;
-  }
-
-  .navbar .nav-link:hover {
-    color: var(--white);
-  }
-
-  .main-section {
-    flex-direction: row;
-  }
-}
-@media (max-width: 992px) {
-  .main-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner-content {
-    text-align: center !important;
-    margin: 25px 0 0 0;
-  }
-}
-
 .perfil-img {
   border-radius: 50%;
   width: 175px;
@@ -363,4 +330,44 @@ svg {
   padding: 10px;
   border-radius: 5px;
   display: none;
+}
+.sticky-top {
+  z-index: 20000 !important;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .navbar .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar .nav-item {
+    margin-left: 30px;
+  }
+
+  .navbar .nav-link:hover {
+    color: var(--white);
+  }
+
+  .main-section {
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-content {
+    text-align: center !important;
+    margin: 25px 0 0 0;
+  }
+  .container-card .card {
+    width: 250px;
+  }
+  
 }

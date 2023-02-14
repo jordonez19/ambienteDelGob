@@ -1,4 +1,4 @@
-.rubberBand:active {
+.rubberBand:hover {
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
     -webkit-animation-duration: 1s;

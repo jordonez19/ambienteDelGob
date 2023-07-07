@@ -46,6 +46,10 @@ h2{
 h3 {
   color: var(--purple);
 }
+.bold{
+  font-weight: bold;
+  color: var(--purple);
+}
 
 .logo,
 .logo:hover {
@@ -346,6 +350,9 @@ svg {
 }
 
 @media (max-width: 992px) {
+  .container{
+    width: 100%;
+  }
   .main-section {
     flex-direction: column;
     justify-content: center;

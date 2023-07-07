@@ -1,17 +1,22 @@
 :root {
-  --purple: #b28dff;
-  --rosado: #ffb5e8;
+  --purple: #68b64f;
+  --rosado: #eeebe4;
   --white: #fff;
   --azul: #6eb5ff;
   --amarillo: rgb(255, 255, 45);
 }
-html{  scroll-behavior: smooth; }
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .purple {
   color: var(--purple);
 }
@@ -19,22 +24,32 @@ html{  scroll-behavior: smooth; }
 .nav-style {
   background: var(--purple);
 }
+
 a.nav-link,
 navbar-brand {
   color: var(--white);
 }
+
 a.nav-link:hover,
 a.nav-link:active {
   border-bottom: solid 2px var(--rosado);
   color: var(--white);
 }
 
+p {
+  text-align: justify;
+}
+
+h3 {
+  color: var(--purple);
+}
+
 .logo,
 .logo:hover {
   color: var(--white);
   font-weight: 600;
-  font-family: cursive;
 }
+
 .img-logo {
   width: 23px;
   height: 40px;
@@ -137,11 +152,12 @@ svg {
 
 .perfil-img {
   border-radius: 50%;
-  width: 175px;
+  width: auto;
   height: 175px;
   border: solid var(--purple);
   box-shadow: 0 0 10px var(--azul);
   margin: 30px 0;
+  padding: 10px;
 }
 
 .container-card {
@@ -195,6 +211,7 @@ svg {
   height: 220px;
   transition: 0.5s;
 }
+
 .container-card .card:hover .imgBox {
   top: 0%;
   transform: translateY(0%);
@@ -209,6 +226,7 @@ svg {
   z-index: 10;
   transition: 1s;
 }
+
 .container-card .card:hover .imgBox img {
   transform: translate(-50%, -50%) rotate(-180deg);
 }
@@ -221,9 +239,11 @@ svg {
   transition: 1s;
   z-index: 10;
 }
+
 .container-card .card:hover .contentBox {
   height: 210px;
 }
+
 .container-card .card .contentBox h2 {
   position: relative;
   font-weight: 600;
@@ -248,6 +268,7 @@ svg {
   letter-spacing: 2px;
   margin: 0 10px;
 }
+
 .container-card .card .contentBox .sabor span {
   width: 20px;
   height: 20px;
@@ -255,6 +276,7 @@ svg {
   margin: 0 5px;
   cursor: pointer;
 }
+
 .container-card .card .contentBox .sabor span:nth-child(2) {
   background-color: var(--azul);
 }
@@ -273,11 +295,13 @@ svg {
 }
 
 .footer {
+  text-align: center;
   margin-top: 35px;
   width: 100%;
   height: auto;
   background-color: var(--purple);
 }
+
 .footer-container {
   padding: 25px;
 }
@@ -287,57 +311,14 @@ svg {
   color: var(--white);
   margin-bottom: 5px;
   font-weight: 600;
+  text-align: justify;
 }
+
 .container-footer ul a {
   text-decoration: none;
 }
 
 
-/* whatsapp */
-#whatsapp-btn i:hover {
-  background-color: #29c824;
-  cursor: pointer;
-}
-
-#whatsapp-btn i {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  outline: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #35eb62;
-  transition: background-color 0.5s ease;
-  border: none;
-  font-size: 31px;
-  color: #fff;
-}
-
-#whatsapp-btn:hover:after {
-  display: block;
-}
-
-#whatsapp-btn:after {
-  content: "¿En que podemos ayudarte?";
-  position: fixed;
-  bottom: 24px;
-  right: 75px;
-  background-color: #21ba47;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  display: none;
-}
-.sticky-top {
-  z-index: 20000 !important;
-}
 
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
@@ -360,18 +341,21 @@ svg {
     flex-direction: row;
   }
 }
+
 @media (max-width: 992px) {
   .main-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .banner-content {
     text-align: center !important;
     margin: 25px 0 0 0;
   }
+
   .container-card .card {
     width: 250px;
   }
-  
+
 }
